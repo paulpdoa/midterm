@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<head>
+    <title>Midterm</title>
+</head>
+<style>
+body{
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+   
+}
+.btn{
+    border:1px solid blue;
+    border-radius:10px;
+    font-weight: 100;
+    font-size:20px;
+    color: red;
+    background-color:lightblue;
+    width:100px;
+    height:50px;
+    
+}
+</style>
+<body>
+    Multiplicand:<input type="number" id="num1"><br>
+    Range:<input type="number" id="num2"><br>  
+    Multiplier<input type="number" id="num3"><br> 
+    <button class="btn" onclick="sum()">Click me!</button>
+    <br>
+    
+</body>
+<script> 
+    function sum(){
+        let num1=+document.getElementById('num1').value;
+        let num2=+document.getElementById('num2').value;
+        let num3=+document.getElementById('num3').value;
+        let i;
+
+        for(i = num1; i <= num2; i++){
+            result = i * num3;
+            document.write(i + " x " + num3 + " = " +  result + "<br>");
+        }   
+    }  
+    </script>
+</html>
